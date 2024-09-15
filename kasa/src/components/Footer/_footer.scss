@@ -1,0 +1,18 @@
+.site-footer {
+   
+    height: 209px;
+    background-color: black;
+
+    &__logo {
+      width: 122px;
+      height: 39px;
+     
+    }
+    &__text {
+      font-size: 24px;
+      color: white;
+      justify-content: center;
+      align-items:self-end;
+      
+    }
+}

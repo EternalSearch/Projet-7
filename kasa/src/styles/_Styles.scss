@@ -1,0 +1,14 @@
+$main-color: #ff6060;
+$footer-bg-color: #000000;
+$bg-color: #ffffff;
+
+#root * {
+  display: flex;
+//   margin: 40px
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  padding: 0 80px; 
+}
