@@ -15,4 +15,10 @@
       align-items:self-end;
       
     }
+    &__container {
+      width: 100%;
+      flex-direction: column;
+      justify-content:space-evenly;
+      align-items: center;
+    }
 }

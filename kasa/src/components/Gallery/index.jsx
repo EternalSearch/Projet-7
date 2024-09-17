@@ -12,7 +12,6 @@ function Gallery() {
             alt={logement.title}
           />
           <h2 className="gallery__titleimg">{logement.title}</h2>
-          {/* <p>{logement.location}</p> */}
         </div>
       ))}
     </div>

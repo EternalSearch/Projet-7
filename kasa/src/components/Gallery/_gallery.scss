@@ -11,13 +11,14 @@
     position: relative;
     max-width: 30%; 
     height: 340px; 
-    overflow: hidden; 
+    overflow: hidden;
+    cursor: pointer;
   }
 
 
   &__img {
-    
     object-fit: cover;
+   
   }
 
   &__titleimg {
