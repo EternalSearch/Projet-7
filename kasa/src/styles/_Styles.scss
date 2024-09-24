@@ -4,10 +4,15 @@ $bg-color: #ffffff;
 
 #root * {
   display: flex;
-//   margin: 40px
+  max-width: 100%;
+ 
+ overflow-x: hidden;
+// //   margin: 40px
+// outline: 1px solid red;
 }
 
 #root {
+
   display: flex;
   flex-direction: column;
   padding: 0 80px; 

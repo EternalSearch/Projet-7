@@ -1,0 +1,34 @@
+// @import "../pages/About/_about.scss";
+
+.aboutdescription {
+  max-width: 100%;
+  flex-direction: column;
+
+&__collapses{
+  height: 50px;      
+}
+&__container{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 15px 0;
+}
+&__topbarcollapses{
+  width: 70%;
+  height: 100%;
+  background-color: $main-color;
+ 
+   
+}    
+&__titlecollapses{
+  font-weight:300;
+  color: white;
+  overflow-y: hidden;
+ 
+ }
+&__text{
+  width: 70%;
+  height: 100%;
+
+}
+}

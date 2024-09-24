@@ -5,6 +5,7 @@ import About from "../../pages/About";
 import Error from "../../pages/Error";
 import Header from "../Header";
 import Footer from "../Footer";
+import AccommodationDescription from "../../pages/AccommodationDescription";
 
 const AppRouter = () => {
   return (
@@ -15,7 +16,8 @@ const AppRouter = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />   
           <Route path="/about" element={<About />} />
-          <Route path="*" element={<Error />} />                 
+          <Route path="*" element={<Error />} />    
+          <Route path="/logement/:id" element={<AccommodationDescription/>} />             
         </Routes>        
       </Router>
       <Footer/>

@@ -1,5 +1,5 @@
 .gallery {
-  max-width: 100%; 
+  // max-width: 100%; 
   background-color: #F6F6F6;
   flex-wrap: wrap;
   padding: 40px;
@@ -11,14 +11,11 @@
     position: relative;
     max-width: 30%; 
     height: 340px; 
-    overflow: hidden;
-    cursor: pointer;
+    // overflow: hidden;
   }
 
-
   &__img {
-    object-fit: cover;
-   
+    // object-fit: cover;
   }
 
   &__titleimg {
@@ -28,6 +25,5 @@
     bottom : 3px;
     left: 30px;
     color: white;
-    
   }
 }

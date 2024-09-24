@@ -1,0 +1,18 @@
+.errorpage {
+    flex-direction: column;
+
+&__code{
+    justify-content: center;
+    
+    font-weight: 700px;
+    color:$main-color;
+    
+    } 
+&__title{
+    font-weight: 500px;
+    color:$main-color;
+    size:36px;
+    }
+    
+
+}

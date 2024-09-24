@@ -1,0 +1,50 @@
+.accomodation-description {
+  flex-direction: column;
+  width: 100%;
+  &__img {
+    position: relative;}
+
+
+&__carouselleft {
+    position: absolute;
+    top:250px;    
+    left:30px;
+    }
+    &__carouselright {
+        position: absolute;
+        top:250px;    
+        }  
+        
+  &__container {
+    flex-direction: column;
+  }
+
+  &__title {
+    font-weight: 500;
+    color: $main-color;
+    size: 36px;
+    width: 100%;
+  }
+  &__picturehost {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+ 
+
+  
+    
+
+//   &__button {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     background-color: yellow;
+//   }
+
