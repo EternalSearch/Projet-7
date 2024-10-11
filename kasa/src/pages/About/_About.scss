@@ -1,44 +1,26 @@
 // @import "../pages/About/_about.scss";
 
-
-.about{
- width: 100%;
-  flex-direction: column;
-
-
-.aboutdescription {
+.about {
   width: 100%;
   flex-direction: column;
-  gap: 20px; 
-  padding: 25px 0px 25px 0px ; 
+
+  &__description {
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 200px;
+  }
+
+  &__text {
+    align-items: end;
+  }
 }
 
-&__text{
- align-items: end;
-
+@media (max-width: 768px) {
+  .about {
+    &__description {
+      padding: 20px;
+      gap: 20px;
+    }
+  }
 }
-
-}
-.collapses__container description{
-
-}
- 
-     
-// }
-// &__container{
-  
-  
-  
- 
-// }
-// &__topbar{
- 
-//   height: 30px;
-// }
-// &__titlecollapses{
-//   font-weight:300;
-//   color: white;
-//   overflow-y: hidden;
-// }
-
-
