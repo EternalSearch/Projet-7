@@ -1,6 +1,8 @@
 .collapses {
   flex-direction: column;
   width: 100%;
+  position: relative;
+  min-height: 54px;
 
   &__container {
     flex-direction: column;
@@ -8,6 +10,7 @@
     flex-wrap: wrap;
   }
   &__topbar {
+    position: absolute;
     border-radius: 10px;
     background-color: $main-color;
     justify-content: space-between;
@@ -26,7 +29,7 @@
     margin-top: 0px;
     border-radius: 05px;
     flex-direction: column;
-    padding: 12px;
+    padding: 70px 20px 20px 20px;
     box-sizing: border-box;
   }
   &__icon {
@@ -38,20 +41,11 @@
   gap: 2px;
 }
 
-
 @media (max-width: 768px) {
   .collapses__topbar {
     width: 100%;
-
   }
-
-  
 }
 
-
-
-
-
-
- @media (max-width: 1440px) {
- }
+@media (max-width: 1440px) {
+}
