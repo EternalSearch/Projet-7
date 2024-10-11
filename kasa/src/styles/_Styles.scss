@@ -1,19 +1,37 @@
 $main-color: #ff6060;
 $footer-bg-color: #000000;
-$bg-color: #ffffff;
+$bg-site: #ffffff;
+$bg: #f6f6f6;
 
-#root * {
-  display: flex;
-  max-width: 100%;
- 
- overflow-x: hidden;
-// //   margin: 40px
-// outline: 1px solid red;
+body, h1, h2 {
+  margin: 0;
 }
 
 #root {
-
-  display: flex;
+  max-width: 1440px;
   flex-direction: column;
-  padding: 0 80px; 
+  margin: auto;
+}
+
+#root * {
+  max-width: 100%;
+  font-family: "Montserrat";
+}
+
+#root, #root * {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.site-header, .banner, .gallery {
+  margin: 0 100px;
+}
+
+@media (max-width: 768px) {
+  .site-header, .banner, .gallery {
+    margin: 0 20px;
+  }
+  #root {
+    max-width: 375px;
+  }
 }

@@ -6,6 +6,7 @@ import Error from "../../pages/Error";
 import Header from "../Header";
 import Footer from "../Footer";
 import AccommodationDescription from "../../pages/AccommodationDescription";
+import Collapses from "../Collapses";
 
 const AppRouter = () => {
   return (
@@ -17,7 +18,8 @@ const AppRouter = () => {
           <Route path="/" element={<HomePage />} />   
           <Route path="/about" element={<About />} />
           <Route path="*" element={<Error />} />    
-          <Route path="/logement/:id" element={<AccommodationDescription/>} />             
+          <Route path="/logement/:id" element={<AccommodationDescription/>} /> 
+          <Route path="/collapses" element={<Collapses/>} />                      
         </Routes>        
       </Router>
       <Footer/>

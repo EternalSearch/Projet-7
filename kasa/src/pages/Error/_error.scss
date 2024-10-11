@@ -1,18 +1,24 @@
 .errorpage {
     flex-direction: column;
+   
 
 &__code{
     justify-content: center;
-    
-    font-weight: 700px;
+    font-weight:700 ;
+    font-size: 96px;
     color:$main-color;
-    
+      
     } 
-&__title{
-    font-weight: 500px;
+&__text{
+    justify-content: center;
+    font-weight: 500 ;
     color:$main-color;
-    size:36px;
+    font-size: 36px ;   
     }
-    
+&__return{
+    justify-content: center;
+    font-weight:500;
+    font-size:18px;        
+}    
 
 }

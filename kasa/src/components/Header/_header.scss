@@ -1,14 +1,42 @@
-.site-header {      
-&__navbar {
+.site-header {
+  padding: 40px 0;
+
+  &__navbar {
     width: 100%;
- gap: 35px;
- font-weight: 500;
- size: 24px;
- justify-content: flex-end;
- 
-}
-&__text {
+    gap: 57px;
+    font-weight: 500;
+    font-size: 24px;
+    justify-content: flex-end;
+  }
+  &__text {
     font-size: 24px;
     cursor: pointer;
+  }
 }
+
+@media (max-width: 768px) {
+  .site-header {
+    max-width: 335px;
+    padding: 20px 0;
+
+    &__logo {
+      width: 145px;
+      height: 46px;
+    }
+    &__navbar {
+      width: 70%;
+
+      gap: 17px;
+     
+    }
+    &__text {
+      font-size: 12px;
+  
+    }
+
+
+  }
+
+  @media (max-width: 1440px) {
+  }
 }

@@ -1,11 +1,13 @@
 import "../../styles/index.scss";
+// import { Link } from "react-router-dom";
 
 const Error = () => {
     return (
         <div className="errorpage">           
-            <p className="errorpage__code">404</p>
-            <h3 className="404">Oups! La page que vous demandez n'existe pas</h3>
-            <p>Revenir sur la page d'accueil</p>
+            <h3 className="errorpage__code">404</h3>
+            <p className="errorpage__text">Oups! La page que vous demandez n'existe pas</p>
+            <p className="errorpage__return">Retourner sur la page d'accueil</p>
+            {/* <Link to = "/"> Revenir sur la page d'accueil</Link> */}
         </div>
     );
 };

@@ -7,18 +7,22 @@ function Gallery() {
   return (
     <div className="gallery">
       {logements.map((logement) => (
-        <Link to={`/logement/${logement.id}`}>
+        <Link className="gallery__link" to={`/logement/${logement.id}`}>
         <div className="gallery__card" key={logement.id}>
-       
+       {/* <div className="gallery__essai"> */}
           <img
             className="gallery__img"
             src={logement.cover}
             alt={logement.title}
           />
           <h2 className="gallery__titleimg">{logement.title}</h2>
+          
+        {/* </div> */}
         </div>
         </Link>
+      
       ))}
+      
     </div>
   );
 }
