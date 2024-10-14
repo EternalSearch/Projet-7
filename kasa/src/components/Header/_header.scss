@@ -1,45 +1,54 @@
 .site-header {
   padding: 40px 0;
+  justify-content: space-between;
 
   &__navbar {
-    width: 100%;
     gap: 57px;
     font-weight: 500;
     font-size: 24px;
     justify-content: flex-end;
-
   }
+
   &__text {
     font-size: 24px;
-    cursor: pointer;
-    text-decoration: none;
+    cursor: pointer;    
   }
+  
+  .buttonstate{
+    text-decoration:none;
+    color: black;
+  } 
 
-    
+  .line{
+    text-decoration: underline;
+    color: black;    
+  } 
+}
 
 @media (max-width: 768px) {
-  .site-header {
-    max-width: 335px;
+  #root .site-header {
     padding: 20px 0;
+    justify-content: space-between;
    
     &__logo {
       width: 145px;
       height: 46px;
     }
     &__navbar {
-      width: 70%;
-     
-      gap: 17px;
-     
-    }
+      margin-left: 10px;
+      gap: unset;   
+      max-width: 144px;
+      width: 100%;
+      justify-content: space-between;
+    }    
     &__text {
       font-size: 12px;
       text-transform: uppercase;
       text-decoration: none;
+      align-items: center;
     }
-
   }
   }
 
   @media (max-width: 1440px) {
-  }}
+  }

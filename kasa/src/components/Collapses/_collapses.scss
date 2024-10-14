@@ -10,11 +10,14 @@
     flex-wrap: wrap;
   }
   &__topbar {
+    width: 100%;
+    min-height: 54px;
+    align-items: center;
+    padding: 0 20px 0 10px;
     position: absolute;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: $main-color;
     justify-content: space-between;
-    padding: 15px 15px 15px 15px;
     overflow: hidden;
   }
   &__title {
@@ -27,7 +30,7 @@
     font-weight: 300;
     background-color: $bg;
     margin-top: 0px;
-    border-radius: 05px;
+    border-radius: 5px;
     flex-direction: column;
     padding: 70px 20px 20px 20px;
     box-sizing: border-box;
@@ -37,13 +40,26 @@
     cursor: pointer;
   }
 }
-.equipmentlist {
-  gap: 2px;
-}
 
 @media (max-width: 768px) {
-  .collapses__topbar {
-    width: 100%;
+  .collapses {
+    min-height: 30px;
+
+    &__topbar {
+      width: 100%;
+      min-height: 30px;
+      padding: 0 10px;
+    }
+    &__title {
+      font-size: 13px;
+    }
+    &__icon {
+      font-size: 10px;
+    }
+    &__text {
+      font-size: 12px;
+      padding: 43px 20px 20px 20px;
+    }
   }
 }
 

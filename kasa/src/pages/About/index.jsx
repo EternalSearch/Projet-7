@@ -1,8 +1,4 @@
 import "../../styles/index.scss";
-import BannerImg from "../../images/bannerpagescollapses.png";
-// import ErrorPage from "../Error";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faChevronUp, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import Collapses from "../../components/Collapses";
 import Banner from "../../components/Banner";
 import BannerImg2 from "../../images/bannerpagescollapses.png";

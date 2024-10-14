@@ -1,22 +1,21 @@
-
 import "../../styles/index.scss";
 import Logo from "../../images/LOGO.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
     <header className="site-header">
-      <img className="site-header__logo" src={Logo} alt = "Logo Kasa" />
+      <img className="site-header__logo" src={Logo} alt="Logo Kasa" />
       <nav className="site-header__navbar">
         <p className="site-header__text buttonaccueil ">
-        <Link to="/">Accueil</Link>
+          <NavLink to="/"  className = {({ isActive }) => (isActive ?'line' :'buttonstate' )}> Accueil </NavLink>
         </p>
         <p className="site-header__text buttonabout">
-        <Link to="/about">A Propos </Link>
+        <NavLink to="/about"  className = {({ isActive }) => (isActive ?'line' :'buttonstate' )}> A Propos </NavLink>       
         </p>
       </nav>
     </header>
   );
 }
-export default Header
-                
+export default Header;
+

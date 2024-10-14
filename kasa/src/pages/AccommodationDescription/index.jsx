@@ -24,7 +24,7 @@ function AccommodationDescription() {
   }, [id]);
 
   if (!accomodation) {
-    return <Error/>;
+    return <Error />;
   }
 
   const {
@@ -97,45 +97,37 @@ function AccommodationDescription() {
       </div>
       <div className="accomodation-description__container">
         <div className="accomodation-description__studio">
-
           <h2 className="accomodation-description__title">{title}</h2>
           <p className="accomodation-description__location">{location}</p>
           <div className="accomodation-description__tags">
             {tags.map((tag, index) => (
               <div className="accomodation-description__tag" key={index}>
-                {tag}
+                <p>{tag}</p>
               </div>
             ))}
           </div>
-          
         </div>
         <div className="def">
           <div className="accomodation-description__namepicture">
-            <p className="accomodation-description__hostname">
-              {name}
-           </p>
-              <img
-                className="accomodation-description__picturehost"
-                src={picture}
-                alt={`Hôte du logement`}
-              />
-          </div> 
-            <div className="accomodation-description__rating">
-              <Notation rating={rating} />
-            </div>
+            <p className="accomodation-description__hostname">{name}</p>
+            <img
+              className="accomodation-description__picturehost"
+              src={picture}
+              alt={`Hôte du logement`}
+            />
           </div>
-      
+          <div className="accomodation-description__rating">
+            <Notation rating={rating} />
+          </div>
+        </div>
       </div>
-
       <div className="colorfulstar stars"></div>
-
       <div className="accomodation-description__collapses">
         <Collapses
           title="Description"
           description={description}
           className="accomodation-description__text"
         />
-
         <Collapses
           title="Équipements"
           description={equipments.map((equipments, index) => (

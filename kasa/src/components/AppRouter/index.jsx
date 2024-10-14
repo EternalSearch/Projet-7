@@ -12,17 +12,19 @@ const AppRouter = () => {
   return (
     <React.StrictMode>
       <Router>
-      <Header/>
-      
-        <Routes>
-          <Route path="/" element={<HomePage />} />   
-          <Route path="/about" element={<About />} />
-          <Route path="*" element={<Error />} />    
-          <Route path="/logement/:id" element={<AccommodationDescription/>} /> 
-          <Route path="/collapses" element={<Collapses/>} />                      
-        </Routes>        
+          <Header />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<About />} />
+            <Route
+              path="/logement/:id"
+              element={<AccommodationDescription />}
+            />
+            <Route path="/collapses" element={<Collapses />} />
+            <Route path="*" element={<Error />} />
+          </Routes>
+        <Footer />
       </Router>
-      <Footer/>
     </React.StrictMode>
   );
 };

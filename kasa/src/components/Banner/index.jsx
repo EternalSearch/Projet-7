@@ -1,5 +1,5 @@
 import "../../styles/index.scss";
-import BannerImg from "../../images/Imagesource1.png";
+// import BannerImg from "../../images/Imagesource1.png";
 
 const SectionBanner = ({ bannerImg,altImg,opacityDark,slogan }) => {
   return (

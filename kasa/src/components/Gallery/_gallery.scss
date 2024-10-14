@@ -15,15 +15,11 @@
     border-radius: 25px;
   }
 
-  // &__essai {
-  //   max-width:30%;
-  //  justify-content:space-between;
-  //  align-items:center;
-  // }
   &__img {
     border-radius: 10px;
     object-fit: cover;
   }
+
   &__titleimg {
     position: absolute;
     font-size: 18px;
@@ -48,6 +44,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: unset;
+    align-items: center;
 
     &__link {
       max-width: 335px;
